@@ -1,0 +1,13 @@
+* Nimblocks
+** Important Note
+This is a project made for fun so expect bugs.
+** Installing
+*** From Binary
+Grab the latest binary from [[https://github.com/usdogu/nimblocks/releases/latest][here]] and put it in somewhere in your path.
+*** From Source
+- Install [[https://nim-lang.org/install.html][Nim]]
+- Clone the repo
+#+BEGIN_SRC sh 
+nimble build
+#+END_SRC
+- Put the builded binary somewhere in your path

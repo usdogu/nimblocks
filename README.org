@@ -7,5 +7,5 @@ Grab the latest binary from [[https://github.com/usdogu/nimblocks/releases/lates
 *** From Source
 - Install [[https://nim-lang.org/install.html][Nim]]
 - Clone the repo
-- execute ~nimble build~
+- execute ~nimble build -d:release~
 - Put the builded binary somewhere in your path

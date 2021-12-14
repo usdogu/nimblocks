@@ -1,4 +1,4 @@
-import strutils, times, os
+import strutils, times, os, strformat
 import x11/[xlib]
 import ./utils, ./objects
 
@@ -22,9 +22,7 @@ proc main(): void =
 
     for item in blocks.mitems:
         if item.inSh:
-            item.args = @[shell, cmdstropt, item.cmd]
-        else:
-            item.args = item.cmd.split(" ")
+            item.cmd = fmt"{shell} {cmdstropt} {item.cmd}"
 
     while true:
         for item in blocks:
